@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4 - Інформація про країну</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Інформація про країну</h1>
+            <p class="subtitle">
+                Введіть ISO-2 код країни, наприклад: UA, PL, DE, FR
+            </p>
+
+            <div class="form-block">
+                <label for="countryCode">ISO-2 код країни:</label>
+                <input type="text" id="countryCode" placeholder="Наприклад, UA" maxlength="2">
+                <button id="searchBtn">Отримати інформацію</button>
+            </div>
+
+            <div id="loading" class="loading hidden">Завантаження...</div>
+            <div id="error" class="message error hidden"></div>
+            <div id="result" class="result hidden"></div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
